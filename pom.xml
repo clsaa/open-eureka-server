@@ -73,7 +73,7 @@
                 <configuration>
                     <fork>true</fork>
                     <executable>true</executable>
-                    <mainClass>com.clsaa.maat.MaatApplication</mainClass>
+                    <mainClass>com.clsaa.eureka.OpenEurekaApplication</mainClass>
                 </configuration>
             </plugin>
             <!-- 打包时跳过单元测试 -->
