@@ -10,8 +10,10 @@ server:
   port: 8761                    # 指定该Eureka实例的端口
 eureka:
   instance:
-    hostname: localhost  # 指定该Eureka实例的主机名
     appname: ${spring.application.name}  #服务名
+  server:
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 2000
   client:
     registerWithEureka: false
     fetchRegistry: false
